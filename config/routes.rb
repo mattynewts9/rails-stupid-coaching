@@ -10,5 +10,9 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
+  # Generic syntax:
+  # verb "path", to: "controller#action"
+  get "ask", to: "questions#ask"
+  get "answer", to: "questions#answer"
   # root "posts#index"
 end
